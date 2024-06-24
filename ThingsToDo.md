@@ -38,3 +38,10 @@ README/Presentation Slide:
 Team Check in All together Goal - We can pick whatever works, but because there are a lot of components here I will say twice a week. Its not to be annoying; There are pieces where we will need to make decisions all together and also connect the pieces together to have it work and being together collectively and clear communication will help. No man's an island.
 
 1. [ ] Met up x times per week. 
+
+
+---------This section is the Parking Lot! Got a random idea for all the team? plug it here and when we get together we can discuss it -------
+
+1. Possible customized logo and buttons
+2. Change Repo from Square_up to Lets_Hang so fight club is our spicy surprise in our presentation -I wish we could have ambiant heavy metal music behind that plays when the site goes red lol-
+3. etc etc add your thoughts/ideas/things here. 
