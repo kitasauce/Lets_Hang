@@ -1,4 +1,11 @@
-Updated: 06/24/2024
+            Updated: 06/24/2024      "Let's Hang"
+
+Presentation: July 8th
+
++  FINAL REPO UPLOAD & WEBSITE Checks all successfully loaded and working July 7th + !!
+
+
+
 
 (Referring to assignment README)
 anyone can add and adjust things especially when we are all together this is just to help keep us organized. 
@@ -8,10 +15,13 @@ anyone can add and adjust things especially when we are all together this is jus
 BackEnd:
 1. [ ] MERN - Apollo server/server.js setup
 2. [ ] Model setup for User, 5 Locations, Times, Weight Height Class, Weapons
+
+                Locations: 1. TheSquare, 2.ScienceCenter, 3.PublicSafety 4.RSDx133 5.PrentisCafe
+
 3. [ ] UUID/Login Authentication
 4. [ ] Tech Blog Format
 5. [ ] MONDODB - Let's hang side Db for User, 5 Locations, Times
-6. [ ] MONDODB - Let's brawl DB for User, Locations, Times,   Weight, Height class, Weapons - Include Chancleta 
+6. [ ] MONDODB - Let's brawl DB for User, Locations, Times, Weight, Height class, Weapons - Include Chancleta! 
 7. [ ] ROUTES and SEEDS with Model info
 8. Refer to Tech Blog for Forum set up - Static Website
 9. Optional - Add AI to teach Users what is hanging out and what is brawling/fight club
@@ -40,8 +50,8 @@ Team Check in All together Goal - We can pick whatever works, but because there 
 1. [ ] Met up x times per week. 
 
 
----------This section is the Parking Lot! Got a random idea for all the team? plug it here and when we get together we can discuss it -------
+            This section is the Parking Lot! Got a random idea for all the team? plug it here and when we get together we can discuss it
 
 1. Possible customized logo and buttons
-2. Change Repo from Square_up to Lets_Hang so fight club is our spicy surprise in our presentation -I wish we could have ambiant heavy metal music behind that plays when the site goes red lol-
+2. [ X ]Change Repo from Square_up to Lets_Hang so fight club is our spicy surprise in our presentation -I wish we could have ambiant heavy metal music behind that plays when the site goes red lol-
 3. etc etc add your thoughts/ideas/things here. 
