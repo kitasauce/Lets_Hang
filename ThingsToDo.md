@@ -1,8 +1,8 @@
-            Updated: 06/24/2024      "Let's Hang"
+            Updated: 06/27/2024      "Let's Hang"
 
 Presentation: July 8th
 
-+  FINAL REPO UPLOAD & WEBSITE Checks all successfully loaded and working July 7th + !!
++  FINAL REPO UPLOAD & WEBSITE Checks all successfully loaded and working NLT July 7th + !!
 
 
 
@@ -12,30 +12,59 @@ anyone can add and adjust things especially when we are all together this is jus
 
 - When completed put [ X ] inside brackets-
 
+(Now in Chronological Order)
+
+
+
+////////////////////////
+
 BackEnd:
-1. [ ] MERN - Apollo server/server.js setup
-2. [ ] Model setup for User, 5 Locations, Times, Weight Height Class, Weapons
+
+1. [ X ] MERN - Apollo server/server.js setup -Done
+2. [ ] Model setup for User, 5 Locations, Times, Weight/Height Class, Weapons
 
                 Locations: 1. TheSquare, 2.ScienceCenter, 3.PublicSafety 4.RSDx133 5.PrentisCafe
 
-3. [ ] UUID/Login Authentication
-4. [ ] Tech Blog Format
-5. [ ] MONDODB - Let's hang side Db for User, 5 Locations, Times
-6. [ ] MONDODB - Let's brawl DB for User, Locations, Times, Weight, Height class, Weapons - Include Chancleta! 
-7. [ ] ROUTES and SEEDS with Model info
+3. [ ] After Models: DATABASE (mongoDB) and Seeds (Pre-loaded Data added into DB) - Also test CRUD routes - 
+4. [ ] ROUTES (graphql) to connect DB(MongoDB) to Front end
+
+
+---After LOG IN/SIGN IN completed and FRONT BACK END together : UUID/Login Authentication
+
+UUID/Login Authentication
 8. Refer to Tech Blog for Forum set up - Static Website
 9. Optional - Add AI to teach Users what is hanging out and what is brawling/fight club
 
 
+///////////////////////
+
+
 FrontEnd:
-1. [ ] REACT NavBar/Footer/Header/Theme set up
-2. [ ] Buttons for SignIn/LogIn/Let's Hang/Let's Brawl -optional after basic buttons work to add more design ideas later-
-3. [ ] Easy Navigation
-4. [ ] Welcome page after User logs in 
-5. [ ] When Button pressed for Lets Hang goes to Friendly Map UI
-6. [ ] When "Lets Brawl" is clicked goes to Redded out Map UI 
-7. [ ] Optional if after all basics work - Targets get "set" at specific location with time. 
-8. Refer to Tech Blog for forum set/up design ideas 
+
+1. [ X ] Button visual test and Color Scheme
+2. [ ] REACT components/pages:  NavBar, Header, Footer, 
+                         Homepage, fuzzy background (Login/Signin page), - Only buttons for Login/Signin
+                         SignedIn, (LetsHang, LetsBrawl buttons) 
+                         LetsHang page unfuzzy background
+                         LetsBrawl page red background
+
+
+       (logout returns home and  Nav/Header/footer on all pages/components)
+
+
+3. [ ]  Refer to Tech Blog/Forum for STATIC website set/up design ideas
+
+
+
+///////////////////////
+
+
+Final Polish: 
+
+1. [ ] Test UI/Server that all is functional
+2. [ ] Nav links work/Sign in works/ DB and routes work
+3. [ ] CRUD works 
+4. [ ] Discuss additional features to add AFTER all basic functions work
 
 
 
@@ -45,9 +74,8 @@ README/Presentation Slide:
 3. [ ] Everything Functional and Uploaded into REPO 1 day before Presentation (Grab Charlie before others do)
 
 
-Team Check in All together Goal - We can pick whatever works, but because there are a lot of components here I will say twice a week. Its not to be annoying; There are pieces where we will need to make decisions all together and also connect the pieces together to have it work and being together collectively and clear communication will help. No man's an island.
+///////////////////////
 
-1. [ ] Met up x times per week. 
 
 
             This section is the Parking Lot! Got a random idea for all the team? plug it here and when we get together we can discuss it
