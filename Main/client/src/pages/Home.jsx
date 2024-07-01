@@ -10,8 +10,8 @@ const Home = () => {
   const matchupList = data?.matchups || [];
 
   return (
-    <div style={{display:"flex"}}>
-    <div className="card bg-white card-rounded w-50">
+    <div style={{display:'flex'}}>
+    <div className="card bg-white card-rounded w-50" style={{position:"relative", top: "910px"}}>
       <div className="card-header bg-dark text-center">
         <h1>Welcome to Let's Hang!</h1>
       </div>
@@ -41,7 +41,7 @@ const Home = () => {
       </div>
     </div>
 
-<div className="card bg-white card-rounded w-50">
+<div className="card bg-white card-rounded w-50" style={{position:"relative", top: "910px"}}>
 <div className="card-header bg-dark text-center">
   <h1>Welcome to Let's Hang!</h1>
 </div>
