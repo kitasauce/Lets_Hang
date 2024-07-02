@@ -1,0 +1,47 @@
+.container {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .card {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .loginFormHeading {
+    text-align: center;
+    color: #333;
+  }
+  
+  .loginFormClass {
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  .loginInput {
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s ease-in-out;
+    outline: none;
+    color: #333;
+  }
+  
+  .loginInput:focus {
+    border-color: #ff4500;
+  } 
+  
+  .loginButton {
+    background-color: #ff4500;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }

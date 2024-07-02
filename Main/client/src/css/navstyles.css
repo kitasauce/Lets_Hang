@@ -1,0 +1,26 @@
+.navbar {
+    background: #de5935;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium';
+    font-weight: 300;
+    width: 100%;
+    position: fixed; 
+    top: 0;
+}
+
+/*style for the title Let's Hang  */
+.navTitle {
+  margin-right: auto;
+  font-size: 150%;
+  padding: 12px 16px;
+}
+
+/* style for the login and singuplink */
+.navItem {
+  padding: 16px 16px;
+  vertical-align: middle;  
+  color: #5ac3b0; 
+  font-weight: 1000;
+}

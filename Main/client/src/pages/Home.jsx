@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import { QUERY_MATCHUPS } from '../utils/queries';
+import Navbar from "../components/Navbar";
 
 const Home = () => {
   const { loading, data } = useQuery(QUERY_MATCHUPS, {
