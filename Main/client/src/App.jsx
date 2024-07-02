@@ -3,6 +3,7 @@ import { Outlet } from 'react-router-dom';
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 import mapBackground from './assets/images/Lets-hang.png';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 
 const client = new ApolloClient({
@@ -13,11 +14,13 @@ const client = new ApolloClient({
 function App() {
   return (
     <ApolloProvider client={client}>
-      <Navbar></Navbar>
-      <div id="map-background" className='bg-fixed bg-cover bg-center' style={{backgroundImage:`url(${mapBackground})`, backgroundSize:"100% auto", backgroundRepeat: "no-repeat", height: "1000px"}}>
-    <Outlet />
+      <div className='app'>
+        <Navbar></Navbar>
+        <div id="map-background" className='bg-fixed bg-cover bg-center' style={{ backgroundImage: `url(${mapBackground})`, backgroundSize: "100% auto", backgroundRepeat: "no-repeat", height: "1000px" }}>
+          <Outlet />
+        </div>
+        <Footer></Footer>
       </div>
-  
     </ApolloProvider>
   );
 }
