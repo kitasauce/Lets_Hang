@@ -1,6 +1,7 @@
 import './App.css';
 import { Outlet } from 'react-router-dom';
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
+import mapBackground from './assets/images/Lets-hang.png';
 
 const client = new ApolloClient({
   uri: '/graphql',
@@ -10,9 +11,10 @@ const client = new ApolloClient({
 function App() {
   return (
     <ApolloProvider client={client}>
-      <div className="flex-column justify-center align-center min-100-vh bg-primary">
-        <Outlet />
+      <div id="map-background" className='bg-fixed bg-cover bg-center' style={{backgroundImage:`url(${mapBackground})`, backgroundSize:"100% auto", backgroundRepeat: "no-repeat", height: "1000px"}}>
+    <Outlet />
       </div>
+  
     </ApolloProvider>
   );
 }
