@@ -4,17 +4,25 @@ const typeDefs = `
     name: String!
   }
 
-  type Matchup {
+  type Brawl {
     _id: ID!
-    tech1: String!
-    tech2: String!
-    tech1_votes: Int
-    tech2_votes: Int
+    Username: String!
+    Location: String!
+    Time: Int
+    Weapon: String!
+  }
+
+  type Hang {
+    _id: ID!
+    Username: String!
+    Location: String!
+    Time: Int
+    Hobby: String!
   }
 
   type Query {
-    tech: [Tech]
-    matchups(_id: String): [Matchup]
+    findBrawls: [Brawl]
+    findHangs: [Hang]
   }
 
   type Mutation {
@@ -24,3 +32,5 @@ const typeDefs = `
 `;
 
 module.exports = typeDefs;
+
+//mutations need to be edited
