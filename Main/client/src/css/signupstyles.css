@@ -1,11 +1,17 @@
 .container {
-    width: 100%;
-    max-width: 400px;
+    min-width: 100%;
+    /* max-width: 600px; */
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
   }
   
   .card {
     width: 100%;
-    background-color: #fff;
+    max-width: 400px;
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
