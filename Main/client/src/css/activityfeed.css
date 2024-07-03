@@ -1,0 +1,216 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header, .project:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .wrapper{
+    max-width: 1200px;
+  }
+
+  .avatar{
+    height: 40px;
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 8px;
+  }
+  
+  .no-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: #1b89bc;
+    text-decoration: none;
+    font-size: 100%;
+  }
+  
+  .no-button:hover {
+    color: #065b83;
+    text-decoration: underline;
+  }
+  
+  .logo:link{
+    color: black;
+    text-decoration: none;
+  }
+  
+  .logo:visited{
+    color: black;
+    text-decoration: none;
+  }
+  
+  .logo:hover{
+    color: black;
+    text-decoration: none;
+    opacity: 0.7;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    list-style-type: none;
+    margin: 0;
+    font-size: 1.5em;
+    
+    
+  }
+  
+  .navbar a{
+    text-decoration: none;
+    margin: 0 5px
+  }
+  
+  .navbar a:visited{
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .navbar a:hover{
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .post{
+    margin: 20px 0;
+    border: 1px lightgrey solid;
+    text-align: right;
+  }
+  
+  .post-title{
+    background-color: lightgrey;
+    padding: 15px;
+    margin-top: 0;
+    text-align: left;
+  }
+  
+  .post-title a:link{
+    color: #617ab7;
+    text-decoration: none;
+  }
+  
+  .post-title a:visited{
+    color: #617ab7;
+    text-decoration: none;
+  }
+  
+  .post-title a:hover{
+    text-decoration: none;
+    color: #0e506e;
+  }
+  
+  .post-content{
+    padding: 10px !important;
+    text-align: left !important;
+  }
+  
+  .post-button{
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .post-author{
+    text-align: right;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+  
+  .post-username{
+    font-weight: bold;
+  }
+  
+  .feed-container{
+    display: block;
+    position: relative;
+    margin-bottom: 20px;
+    min-width: 20%;
+    max-width: 80%;
+    margin-top: 20px;
+    backdrop-filter: blur(10px);
+    left: 100px;
+  }
+  
+  .footer-margin{
+    margin-top: 50px;
+  }
+  
+  .form-row{
+    margin-bottom: 20px;
+  }
+  
+  .signup{
+    margin-top: 20px;
+  }
+  
+  .signup-form div{
+    margin-bottom: 20px;
+  }
+  
+  .login-form div{
+    margin-bottom: 20px;
+  }
+  
+  .edit-post-form{
+    margin-top: 20px;
+  }
+  
+  .edit-post-form div{
+    margin-bottom: 20px;
+  }
+  
+  .register{
+    display: inline-block;
+    margin-top: 20px;
+  }
+  
+  .single-post-container{
+    margin-top: 20px;
+  }
+  
+  .comment-container{
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px #d3d3d3 solid;
+    border-radius: 10px;
+  }
+  
+  .comment-button{
+    margin-top: 20px;
+  }
+  
+  .comment-text{
+    padding: 10px;
+  }
+  
+  .comment-author{
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  #signup button{
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  .dashboard-post{
+    border: 1px #d3d3d3 solid;
+  }
+  
+  .new-post-button{
+    margin: 20px 0;
+  }
+  
+  footer{
+    margin-top: 60px;
+    font-size: 1.4em;
+  }
