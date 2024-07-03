@@ -1,27 +1,23 @@
-const { Tech, Matchup } = require('../models');
+const { Brawl, Hang } = require('../models');
 
 const resolvers = {
   Query: {
-    tech: async () => {
-      return Tech.find({});
+    findBrawls: async () => {
+      return Brawl.find({});
     },
-    matchups: async (parent, { _id }) => {
-      const params = _id ? { _id } : {};
-      return Matchup.find(params);
+    findHangs: async () => {
+      return Hang.find({});
     },
   },
+//basic creation of brawls and hangs- this is where we left off w/Charlie
   Mutation: {
-    createMatchup: async (parent, args) => {
-      const matchup = await Matchup.create(args);
-      return matchup;
+    createBrawl: async (parent, args) => {
+      const Brawl = await Brawl.create(args);
+      return Brawl;
     },
-    createVote: async (parent, { _id, techNum }) => {
-      const vote = await Matchup.findOneAndUpdate(
-        { _id },
-        { $inc: { [`tech${techNum}_votes`]: 1 } },
-        { new: true }
-      );
-      return vote;
+    createHang: async (parent, args) => {
+      const Hang = await Hang.create(args);
+      return Hang;
     },
   },
 };
