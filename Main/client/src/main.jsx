@@ -8,6 +8,7 @@ import Vote from './pages/Vote';
 import NotFound from './pages/NotFound';
 import Login from './pages/Login.jsx';
 import Signup from './pages/Signup.jsx';
+import Feed from './pages/Feed.jsx';
 
 
 const router = createBrowserRouter([
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: '/signup',
         element: <Signup/>
+      },
+      {
+        path: '/feed',
+        element: <Feed/>
       },
     ],
   },
