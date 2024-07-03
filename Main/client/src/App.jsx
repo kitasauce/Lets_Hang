@@ -1,7 +1,7 @@
 import './App.css';
 import { Outlet } from 'react-router-dom';
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
-import mapBackground from './assets/images/Lets-hang.png';
+import mapBackground from './assets/images/MapBackground.jpg';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
