@@ -10,7 +10,7 @@ const BrawlSchema = new Schema({
     required: true,
   },
   Time: {
-    type: Int,
+    type: String,
     required: true,
   },
   Weapon: {

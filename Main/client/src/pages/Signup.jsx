@@ -1,4 +1,5 @@
 import "../css/signupstyles.css"
+import { CREATE_SIGNUP } from "../utils/mutations"
 
 const Signup = () => {
     return (
