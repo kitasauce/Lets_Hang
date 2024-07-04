@@ -5,6 +5,7 @@ import brawlimage from '../assets/images/brawlimagefist-KV.png';
 import hangimage from '../assets/images/hangimagefist-kv.webp';
 import Navbar from "../components/Navbar";
 
+
 const Home = () => {
   const { loading, data } = useQuery(QUERY_MATCHUPS, {
     fetchPolicy: "no-cache"
@@ -13,16 +14,16 @@ const Home = () => {
   const matchupList = data?.matchups || [];
 
   return (
-    <div style={{ display: 'flex' }}>
+    <>
+   <div style={{ display: 'flex'}}>
       <div className="card bg-white card-rounded w-50">
         <div className="card-header bg-dark text-center">
           <h1>Welcome</h1>
         </div>
-        <div className='brawl-image m-5'>
+        <div className='brawl-image m-5 text-center'>
           <img src={brawlimage} width={200}></img>
         </div>
         <div className="card-body m-5">
-          <h2>vote on location...</h2>
           {loading ? (
             <div>Loading...</div>
           ) : (
@@ -40,7 +41,7 @@ const Home = () => {
           )}
         </div>
         <div className="card-footer text-center m-3">
-          <h2>Ready to Brawl</h2>
+          <h2>Ready to Brawl?</h2>
           <Link to="/matchup">
             <button className="btn btn-lg btn-danger">Let's Brawl!</button>
           </Link>
@@ -51,11 +52,10 @@ const Home = () => {
         <div className="card-header bg-dark text-center">
           <h1>Welcome</h1>
         </div>
-        <div className='hang-image m-5'>
+        <div className='hang-image m-5 text-center'>
           <img src={hangimage} width={200}></img>
         </div>
         <div className="card-body m-5">
-          <h2>vote on location...</h2>
           {loading ? (
             <div>Loading...</div>
           ) : (
@@ -80,6 +80,7 @@ const Home = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

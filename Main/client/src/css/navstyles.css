@@ -16,6 +16,14 @@
   font-size: 150%;
   padding: 12px 16px;
 }
+.navTitle a {
+  margin-right: auto;
+  font-size: 150%;
+  padding: 12px 16px;
+  text-decoration: none;
+  color:  white;
+
+}
 
 /* style for the login and singuplink */
 .navItem {

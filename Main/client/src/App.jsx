@@ -1,8 +1,10 @@
 import './App.css';
 import { Outlet } from 'react-router-dom';
+
 import { ApolloClient, ApolloProvider, InMemoryCache, createHttpLink } from '@apollo/client';
 import mapBackground from './assets/images/Lets-hang.png';
 import { setContext } from '@apollo/client/link/context';
+
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
