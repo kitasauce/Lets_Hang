@@ -1,4 +1,5 @@
 const {User,Hang} = require('../models');
+const {signToken} = require("../utils/auth")
 
 const resolvers = {
   Query: {
@@ -14,7 +15,11 @@ const resolvers = {
     createUser: async (parent, args) => {
       const user = await user.create(args);
     },
-    
+    createSignup: async (parent, args) => {
+      const userdata = await User.create(args);
+      const token = signToken(userdata);
+      return {token, userdata};
+    },
     // createBrawl: async (parent, args) => {
     //   const Brawl = await Brawl.create(args);
     //   return Brawl;
