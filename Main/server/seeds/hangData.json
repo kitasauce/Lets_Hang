@@ -1,8 +1,8 @@
 [
     {
-    "Username": "Johnnyman",
-    "Location": "ScienceCenter",
-    "Time": 1700,
-    "Hobby": "Birdwatching"
+    
+    "location": "ScienceCenter",
+    "time": "17:00",
+    "hobby": "Birdwatching"
     }
 ]

@@ -1,11 +1,9 @@
 [
     {
-        "First": "Johnny",
-        "Last": "Walker",
-        "Username": "Johnnyman",
-        "Password": "thepasswordman",
-        "UserID": "0"
+        "first": "Johnny",
+        "last": "Walker",
+        "username": "Johnnyman",
+        "password": "thepasswordman"
     }
 ]
 
-also need to see if userID is neccessary? 

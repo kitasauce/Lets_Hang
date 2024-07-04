@@ -1,4 +1,4 @@
-const { Brawl, Hang } = require('../models');
+const {User,Hang} = require('../models');
 
 const resolvers = {
   Query: {
@@ -11,10 +11,14 @@ const resolvers = {
   },
 //basic creation of brawls and hangs- this is where we left off w/Charlie
   Mutation: {
-    createBrawl: async (parent, args) => {
-      const Brawl = await Brawl.create(args);
-      return Brawl;
+    createUser: async (parent, args) => {
+      const user = await user.create(args);
     },
+    
+    // createBrawl: async (parent, args) => {
+    //   const Brawl = await Brawl.create(args);
+    //   return Brawl;
+    // },
     createHang: async (parent, args) => {
       const Hang = await Hang.create(args);
       return Hang;
