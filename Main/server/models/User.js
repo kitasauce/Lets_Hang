@@ -20,12 +20,9 @@ const UserSchema = new Schema({
     type: String,
     required: true,
     unique: true,
-  },
-  userID: {
-    type: String,
   }
 });
 
-const User = model('User', UserSchema);
+const User = model('user', UserSchema);
 
 module.exports = User;
