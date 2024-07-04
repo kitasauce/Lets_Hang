@@ -1,3 +1,5 @@
+//double check this model, it may be incorrect
+
 const { Schema, model } = require('mongoose');
 
 const UserSchema = new Schema({
