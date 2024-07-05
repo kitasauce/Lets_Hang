@@ -3,7 +3,7 @@ const { Schema, model } = require('mongoose');
 const HangSchema = new Schema({
   user_id: {
     type: Schema.Types.ObjectId,
-    ref: 'user',
+    ref: 'User',
     required: true,
   },
   location: {
@@ -21,12 +21,12 @@ const HangSchema = new Schema({
   hangers:[
     {
       type: Schema.Types.ObjectId,
-      ref: 'user',
+      ref: 'User',
     }
   ]
 });
 
-const Hang = model('hang', HangSchema);
+const Hang = model('Hang', HangSchema);
 
 module.exports = Hang;
 

@@ -1,9 +1,10 @@
 const { Schema, model } = require('mongoose');
 
 const BrawlSchema = new Schema({
-  username: {
-    type: String,
-    required: true,
+  user_id: {
+    type: Schema.Types.ObjectId,
+    ref: 'User',
+    
   },
   location: {
     type: String,
@@ -17,6 +18,7 @@ const BrawlSchema = new Schema({
     type: String,
     required: true,
   }
+  
 });
 
 const Brawl = model('Brawl', BrawlSchema);
