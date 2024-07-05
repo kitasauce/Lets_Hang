@@ -1,13 +1,14 @@
 import { Link } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
-import { QUERY_MATCHUPS } from '../utils/queries';
+import { QUERY_HANGS} from '../utils/queries';
 import brawlimage from '../assets/images/brawlimagefist-KV.png';
 import hangimage from '../assets/images/hangimagefist-kv.webp';
 import Navbar from "../components/Navbar";
 
 
+
 const Home = () => {
-  const { loading, data } = useQuery(QUERY_MATCHUPS, {
+  const { loading, data } = useQuery(QUERY_HANGS, {
     fetchPolicy: "no-cache"
   });
 
@@ -18,10 +19,10 @@ const Home = () => {
    <div style={{ display: 'flex'}}>
       <div className="card bg-white card-rounded w-50">
         <div className="card-header bg-dark text-center">
-          <h1>Welcome</h1>
+          
         </div>
         <div className='brawl-image m-5 text-center'>
-          <img src={brawlimage} width={200}></img>
+          <img src={brawlimage} width={149}></img>
         </div>
         <div className="card-body m-5">
           {loading ? (
@@ -50,12 +51,12 @@ const Home = () => {
 
       <div className="card bg-white card-rounded w-50">
         <div className="card-header bg-dark text-center">
-          <h1>Welcome</h1>
+          
         </div>
         <div className='hang-image m-5 text-center'>
-          <img src={hangimage} width={200}></img>
+          <img src={hangimage} width={173}></img>
         </div>
-        <div className="card-body m-5">
+        <div className="card-body m-2">
           {loading ? (
             <div>Loading...</div>
           ) : (

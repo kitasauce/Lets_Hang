@@ -1,45 +1,48 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useMutation, useQuery } from '@apollo/client';
-import { QUERY_TECH } from '../utils/queries';
+import { QUERY_HANGS } from '../utils/queries';
+import { QUERY_BRAWLS } from '../utils/queries';
 // import { CREATE_MATCHUP } from '../utils/mutations';
 
-const Matchup = () => {
-  const { loading, data } = useQuery(QUERY_TECH);
+const Hang = () => {
+  const { loading, data } = useQuery(QUERY_HANGS);
 
-  const techList = data?.tech || [];
+  const hangList = data?.hangList || [];
 
   const [formData, setFormData] = useState({
-    tech1: 'JavaScript',
-    tech2: 'JavaScript',
+    time: 'JavaScript',
+    location: 'JavaScript',
+    hobby: 'Javascript',
+
   });
   let navigate = useNavigate();
 
-  const [createMatchup, { error }] = useMutation(CREATE_MATCHUP);
+  const [queryMatchup, { error }] = useMutation(QUERY_HANGS_);
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleFormSubmit = async (event) => {
-    event.preventDefault();
+  // const handleFormSubmit = async (event) => {
+  //   event.preventDefault();
 
-    try {
-      const { data } = await createMatchup({
-        variables: { ...formData },
-      });
+  //   try {
+  //     const { data } = await createMatchup({
+  //       variables: { ...formData },
+  //     });
 
-      navigate(`/matchup/${data.createMatchup._id}`);
-    } catch (err) {
-      console.error(err);
-    }
+  //     navigate(`/matchup/${data.createMatchup._id}`);
+  //   } catch (err) {
+  //     console.error(err);
+  //   }
 
-    setFormData({
-      tech1: 'JavaScript',
-      tech2: 'JavaScript',
-    });
-  };
+  //   setFormData({
+  //     tech1: 'JavaScript',
+  //     tech2: 'JavaScript',
+  //   });
+  // };
 
   return (
     <div className="card bg-white card-rounded w-25">
@@ -82,4 +85,4 @@ const Matchup = () => {
   );
 };
 
-export default Matchup;
+export default Hang;
