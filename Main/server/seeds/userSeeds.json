@@ -1,0 +1,101 @@
+[
+    {
+        "first": "Johnny",
+        "last": "Walker",
+        "email": "Walkerman@mail.com",
+        "username": "Johnnyman",
+        "password": "thepasswordman"
+    },
+    {
+        "first": "Sonya",
+        "last": "Blade",
+        "email": "Thatsonyagirl@blonde.com",
+        "username": "MissBlade",
+        "password": "123blonde"
+    },
+    {
+        "first": "Mario",
+        "last": "Puentes",
+        "email": "Marioman@knuckles.com",
+        "username": "ItsaMe",
+        "password": "goldstar222"
+    },
+    {
+        "first": "Sai",
+        "last": "Choi",
+        "email": "Sai@mail.com",
+        "username": "Scorpion",
+        "password": "getoverhere"
+    },
+    {
+        "first": "Kitana",
+        "last": "Jones",
+        "email": "justanothergirl@mail.com",
+        "username": "KitKatGirl",
+        "password": "45Kit78"
+    }
+]
+
+
+
+
+
+
+
+
+
+
+
+
+// [ REFERENCE ]
+//   {
+//     "username": "Brian Kernighan",
+//     "email": "bkernighan@techfriends.dev",
+//     "password": "password01"
+//   },
+//   {
+//     "username": "Max Kanat-Alexander",
+//     "email": "mkanatalexander@techfriends.dev",
+//     "password": "password02"
+//   },
+//   {
+//     "username": "Why The Lucky Stiff",
+//     "email": "wtls@techfriends.dev",
+//     "password": "password03"
+//   },
+//   {
+//     "username": "Kent Beck",
+//     "email": "kbeck@techfriends.dev",
+//     "password": "password04"
+//   },
+//   {
+//     "username": "Edward V. Berard",
+//     "email": "evberard@techfriends.dev",
+//     "password": "password05"
+//   },
+//   {
+//     "username": "Alan Kay",
+//     "email": "akay@techfriends.dev",
+//     "password": "password06"
+//   },
+//   {
+//     "username": "C.A.R. Hoare",
+//     "email": "choare@techfriends.dev",
+//     "password": "password07"
+//   },
+//   {
+//     "username": "David Thomas",
+//     "email": "dthomas@techfriends.dev",
+//     "password": "password08"
+//   },
+//   {
+//     "username": "Donald Knuth",
+//     "email": "dknuth@techfriends.dev",
+//     "password": "password09"
+//   },
+//   {
+//     "username": "Lernantino",
+//     "email": "lernantino@techfriends.dev",
+//     "password": "password10"
+//   }
+// ]
