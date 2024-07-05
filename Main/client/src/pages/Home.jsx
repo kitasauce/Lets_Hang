@@ -4,6 +4,7 @@ import { QUERY_HANGS} from '../utils/queries';
 import brawlimage from '../assets/images/brawlimagefist-KV.png';
 import hangimage from '../assets/images/hangimagefist-kv.webp';
 import Navbar from "../components/Navbar";
+import "../css/homepage.css"
 
 
 
@@ -16,7 +17,7 @@ const Home = () => {
 
   return (
     <>
-   <div style={{ display: 'flex'}}>
+    <div className="homepage-cards">
       <div className="card bg-white card-rounded w-50">
         <div className="card-header bg-dark text-center">
           
