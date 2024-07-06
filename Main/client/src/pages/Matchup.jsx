@@ -6,7 +6,7 @@ import { useMutation, useQuery } from '@apollo/client';
 // import { CREATE_BRAWL } from '../utils/mutations';
 // import { CREATE_MATCHUP } from '../utils/mutations';
 
-const Hang = () => {
+const Brawl = () => {
   // const { loading, data } = useQuery(QUERY_HANGS);
 
   // const hangList = data?.hangList || [];
@@ -49,12 +49,12 @@ const Hang = () => {
   return (
     <div className="card bg-white card-rounded w-25">
       <div className="card-header bg-dark text-center">
-        <h1>Let's create a matchup!</h1>
+        <h1>Let's Create a Matchup</h1>
       </div>
       <div className="card-body m-5">
 
         <form onSubmit={handleFormSubmit}>
-          <label>Tech 1: </label>
+          <label>Location</label>
           <select name="tech1" onChange={handleInputChange}>
             {/* {techList.map((tech) => {
                 return (
@@ -63,17 +63,23 @@ const Hang = () => {
                   </option>
                 );
               })} */}
-            <option key={1} value={"hello"}>
-              Hello
+            <option key={1} value={"theSqaure"}>
+              The Square
             </option>
-            <option key={2} value={"bye"}>
-              bye
+            <option key={2} value={"scienceCenter"}>
+              Science Center
             </option>
-            <option key={3} value={"night"}>
-              night
+            <option key={3} value={"publicSafety"}>
+              Public Safety
+            </option>
+            <option key={4} value={"prentisCafe"}>
+              Prentis Cafe
+            </option>
+            <option key={5} value={"135thst"}>
+              135th st
             </option>
           </select>
-          <label>Tech 2: </label>
+          <label>Weapon</label>
           <select name="tech2" onChange={handleInputChange}>
             {/* {techList.map((tech) => {
                 return (
@@ -82,18 +88,24 @@ const Hang = () => {
                   </option>
                 );
               })} */}
-            <option key={1} value={"hello"}>
-              Hello
+            <option key={6} value={"hello"}>
+              Chancleta
             </option>
-            <option key={2} value={"bye"}>
-              bye
+            <option key={7} value={"bye"}>
+              Lightsaber
             </option>
-            <option key={3} value={"night"}>
-              night
+            <option key={9} value={"night"}>
+              Lead Pipe
+            </option>
+            <option key={10} value={"night"}>
+              Lead Pipe
+            </option>
+            <option key={11} value={"night"}>
+              Fists
             </option>
           </select>
           <button className="btn btn-danger" type="submit">
-            Create Matchup!
+          Post
           </button>
         </form>
 
@@ -103,4 +115,4 @@ const Hang = () => {
   );
 };
 
-export default Hang;
+export default Brawl;
