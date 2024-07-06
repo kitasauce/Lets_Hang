@@ -1,48 +1,50 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useMutation, useQuery } from '@apollo/client';
-import { QUERY_HANGS } from '../utils/queries';
-import { QUERY_BRAWLS } from '../utils/queries';
+// import { QUERY_HANGS } from '../utils/queries';
+// import { QUERY_BRAWLS } from '../utils/queries';
+// import { CREATE_BRAWL } from '../utils/mutations';
 // import { CREATE_MATCHUP } from '../utils/mutations';
 
 const Hang = () => {
-  const { loading, data } = useQuery(QUERY_HANGS);
+  // const { loading, data } = useQuery(QUERY_HANGS);
 
-  const hangList = data?.hangList || [];
+  // const hangList = data?.hangList || [];
 
   const [formData, setFormData] = useState({
-    time: 'JavaScript',
-    location: 'JavaScript',
-    hobby: 'Javascript',
-
+    time: '',
+    location: '',
+    weapon: '',
   });
+ 
+  // const [queryMatchup, { error }] = useMutation(CREATE_HANG);
+ 
   let navigate = useNavigate();
-
-  const [queryMatchup, { error }] = useMutation(QUERY_HANGS_);
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  // const handleFormSubmit = async (event) => {
-  //   event.preventDefault();
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
 
-  //   try {
-  //     const { data } = await createMatchup({
-  //       variables: { ...formData },
-  //     });
+    try {
+      const { data } = await createMatchup({
+        variables: { ...formData },
+      });
 
-  //     navigate(`/matchup/${data.createMatchup._id}`);
-  //   } catch (err) {
-  //     console.error(err);
-  //   }
+      navigate(`/matchup/${data.createMatchup._id}`);
+    } catch (err) {
+      console.error(err);
+    }
 
-  //   setFormData({
-  //     tech1: 'JavaScript',
-  //     tech2: 'JavaScript',
-  //   });
-  // };
+    setFormData({
+      time: 'JavaScript',
+      location: 'JavaScript',
+      hobby: 'Javascript',
+    });
+  };
 
   return (
     <div className="card bg-white card-rounded w-25">
@@ -50,37 +52,53 @@ const Hang = () => {
         <h1>Let's create a matchup!</h1>
       </div>
       <div className="card-body m-5">
-        {loading ? (
-          <div>Loading...</div>
-        ) : (
-          <form onSubmit={handleFormSubmit}>
-            <label>Tech 1: </label>
-            <select name="tech1" onChange={handleInputChange}>
-              {techList.map((tech) => {
+
+        <form onSubmit={handleFormSubmit}>
+          <label>Tech 1: </label>
+          <select name="tech1" onChange={handleInputChange}>
+            {/* {techList.map((tech) => {
                 return (
                   <option key={tech._id} value={tech.name}>
                     {tech.name}
                   </option>
                 );
-              })}
-            </select>
-            <label>Tech 2: </label>
-            <select name="tech2" onChange={handleInputChange}>
-              {techList.map((tech) => {
+              })} */}
+            <option key={1} value={"hello"}>
+              Hello
+            </option>
+            <option key={2} value={"bye"}>
+              bye
+            </option>
+            <option key={3} value={"night"}>
+              night
+            </option>
+          </select>
+          <label>Tech 2: </label>
+          <select name="tech2" onChange={handleInputChange}>
+            {/* {techList.map((tech) => {
                 return (
                   <option key={tech._id} value={tech.name}>
                     {tech.name}
                   </option>
                 );
-              })}
-            </select>
-            <button className="btn btn-danger" type="submit">
-              Create Matchup!
-            </button>
-          </form>
-        )}
+              })} */}
+            <option key={1} value={"hello"}>
+              Hello
+            </option>
+            <option key={2} value={"bye"}>
+              bye
+            </option>
+            <option key={3} value={"night"}>
+              night
+            </option>
+          </select>
+          <button className="btn btn-danger" type="submit">
+            Create Matchup!
+          </button>
+        </form>
+
       </div>
-      {error && <div>Something went wrong...</div>}
+  
     </div>
   );
 };
