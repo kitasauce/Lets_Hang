@@ -7,9 +7,9 @@ import { CREATE_SIGNUP } from "../utils/mutations"
 
 const Signup = () => {
 
-  
+
   const [formState, setFormState] = useState({
-    
+
     first: '',
     last: '',
     username: '',
@@ -29,7 +29,7 @@ const Signup = () => {
       [name]: value,
     });
 
-    
+
   };
 
   const handleFormSubmit = async (event) => {
@@ -46,21 +46,20 @@ const Signup = () => {
       console.error(e);
     }
   };
-    return (
-        <div className="container">
-            <div className="card">
-                <h2 className="loginFormHeading">Signup</h2>
-                <form className="loginFormClass" onSubmit={handleFormSubmit}>
-                    <input className="loginInput" type="text"  name="first" placeholder="First Name" onChange={handleChange}required />
-                    <input className="loginInput" type="text"  name="last" placeholder="Last Name" onChange={handleChange}required />
-                    <input className="loginInput" type="text"  name="username" placeholder="Username" onChange={handleChange}required />
-                    <input className="loginInput" type="password" id="password" name="password" onChange={handleChange} placeholder="Password" required />
-                    <button className="loginButton" type="submit">Signup</button>
-                </form>
-            </div>
 
-        </div>
-   
-)
+  return (
+    <div className="container">
+      <div className="card">
+        <h2 className="loginFormHeading">Signup</h2>
+        <form className="loginFormClass" onSubmit={handleFormSubmit}>
+          <input className="loginInput" type="text" name="first" placeholder="First Name" onChange={handleChange} required />
+          <input className="loginInput" type="text" name="last" placeholder="Last Name" onChange={handleChange} required />
+          <input className="loginInput" type="text" name="username" placeholder="Username" onChange={handleChange} required />
+          <input className="loginInput" type="password" id="password" name="password" onChange={handleChange} placeholder="Password" required />
+          <button className="loginButton" type="submit">Signup</button>
+        </form>
+      </div>
+    </div>
+  )
 }
 export default Signup

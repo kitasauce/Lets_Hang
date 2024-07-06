@@ -35,15 +35,17 @@ type Query {
 
   type Mutation {
     createSignup(first: String! last: String!, username: String!, password: String!): Auth
-    createBrawl(username: String!, location: String!, time: String!, weapon: String!): Brawl
-    createHang(username: String!, location: String!, time: String!, hobby: String!): Hang
+
+    createBrawl(Username: String!, Location: String!, Time: String!, Weapon: String!): Brawl
+    createHang(Username: String!, Location: String!, Time: String!, Hobby: String!): Hang
+    login(username: String!, password: String!): Auth
 
   }
 `;
 
 module.exports = typeDefs;
 
-// login(email: String!, password: String!): Auth
+
 
 // // const typeDefs = `
 //   type User {
