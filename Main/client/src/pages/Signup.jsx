@@ -1,18 +1,12 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-
 import { useMutation } from '@apollo/client';
-
 import Auth from '../utils/auth';
-
 import "../css/signupstyles.css"
-
 import { CREATE_SIGNUP } from "../utils/mutations"
 
-
-
-
 const Signup = () => {
+
 
   const [formState, setFormState] = useState({
 
@@ -52,6 +46,7 @@ const Signup = () => {
       console.error(e);
     }
   };
+
   return (
     <div className="container">
       <div className="card">

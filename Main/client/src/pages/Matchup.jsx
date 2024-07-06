@@ -49,6 +49,7 @@ const Brawl = () => {
   return (
     <div className="card bg-white card-rounded w-25">
       <div className="card-header bg-dark text-center">
+
         <h1>Search for a Hang</h1>
       </div>
       <div className="card-body m-5">

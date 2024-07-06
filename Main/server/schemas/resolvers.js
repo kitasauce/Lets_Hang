@@ -24,13 +24,28 @@ const resolvers = {
       const token = signToken(user);
       return {token, user};
     },
-    createBrawl: async (parent, args) => {
+    createBrawl: async (parent, args, context) => {
       const Brawl = await Brawl.create(args);
       return Brawl;
     },
-    createHang: async (parent, args) => {
-      const Hang = await Hang.create(args);
-      return Hang;
+    createHang: async (parent, args, context) => {
+
+   
+      if(context.user){
+
+        console.log("This is args = ", args)
+        console.log("This is context === ", context.user)
+        let newHangInfo = args;
+        newHangInfo.user_id = context.user._id;
+
+        console.log("this is new hang infor variable = ", newHangInfo)
+
+        const newHang = await Hang.create(newHangInfo);
+        return newHang;
+      }
+
+      throw AuthenticationError;
+ 
     },
     login: async (parent, { username, password }) => {
       const user = await User.findOne({ username });

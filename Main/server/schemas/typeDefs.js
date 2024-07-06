@@ -10,7 +10,7 @@ type User {
  }
   
   type Brawl {
-    _id: ID!
+    user_id: ID!
     username: String!
     location: String!
     time: Int
@@ -18,10 +18,10 @@ type User {
   }
   
   type Hang {
-    _id: ID!
+    user_id: ID!
     username: String!
     location: String!
-    time: Int
+    time: String!
     hobby: String!
   }
 type Query {
@@ -35,9 +35,11 @@ type Query {
 
   type Mutation {
     createSignup(first: String! last: String!, username: String!, password: String!): Auth
+
     createBrawl(Username: String!, Location: String!, Time: String!, Weapon: String!): Brawl
     createHang(Username: String!, Location: String!, Time: String!, Hobby: String!): Hang
     login(username: String!, password: String!): Auth
+
   }
 `;
 
