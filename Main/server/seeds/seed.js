@@ -12,7 +12,7 @@ db.once('open', async () => {
   if (userCheck.length) {
     await db.dropCollection('users');
   }
- let userInfo = await User.insertMany(userData);
+ let userInfo = await User.create(userData);
 // console.log(userInfo[0]._id);
   let hangCheck = await db.db.listCollections({ name: 'hangs'}).toArray();
   if (hangCheck.length) {

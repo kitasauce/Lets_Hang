@@ -32,23 +32,24 @@ const resolvers = {
       const Hang = await Hang.create(args);
       return Hang;
     },
-    // login: async (parent, { email, password }) => {
-    //   const user = await User.findOne({ email });
+    login: async (parent, { username, password }) => {
+      const user = await User.findOne({ username });
+console.log(user);
+      if (!user) {
+        throw AuthenticationError;
+      }
 
-    //   if (!user) {
-    //     throw AuthenticationError;
-    //   }
+      const correctPw = await user.isCorrectPassword(password);
+      console.log(correctPw);
+      if (!correctPw) {
+        throw AuthenticationError;
+      }
 
-    //   const correctPw = await user.isCorrectPassword(password);
+      const token = signToken(user);
 
-    //   if (!correctPw) {
-    //     throw AuthenticationError;
-    //   }
-
-    //   const token = signToken(user);
-
-    //   return { token, user };
+      return { token, user };
   },
+}
 };
 
 module.exports = resolvers;

@@ -40,16 +40,16 @@ const Brawl = () => {
     }
 
     setFormData({
-      time: 'JavaScript',
-      location: 'JavaScript',
-      hobby: 'Javascript',
+      time: '',
+      location: '',
+      hobby: '',
     });
   };
 
   return (
     <div className="card bg-white card-rounded w-25">
       <div className="card-header bg-dark text-center">
-        <h1>Let's Create a Matchup</h1>
+        <h1>Search for a Hang</h1>
       </div>
       <div className="card-body m-5">
 

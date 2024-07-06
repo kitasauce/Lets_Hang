@@ -1,19 +1,19 @@
 import { Link } from 'react-router-dom';
-import { useQuery } from '@apollo/client';
-import { QUERY_HANGS} from '../utils/queries';
+// import { useQuery } from '@apollo/client';
+// import { QUERY_HANGS} from '../utils/queries';
 import brawlimage from '../assets/images/brawlimagefist-KV.png';
 import hangimage from '../assets/images/hangimagefist-kv.webp';
-import Navbar from "../components/Navbar";
+// import Navbar from "../components/Navbar";
 import "../css/homepage.css"
 
 
 
 const Home = () => {
-  const { loading, data } = useQuery(QUERY_HANGS, {
-    fetchPolicy: "no-cache"
-  });
+  // const { loading, data } = useQuery(QUERY_HANGS, {
+  //   fetchPolicy: "no-cache"
+  // });
 
-  const matchupList = data?.matchups || [];
+  // const matchupList = data?.matchups || [];
 
   return (
     <>
@@ -25,8 +25,8 @@ const Home = () => {
         <div className='brawl-image m-5 text-center'>
           <img src={brawlimage} width={149}></img>
         </div>
-        <div className="card-body m-5">
-          {loading ? (
+        {/* <div className="card-body m-5">
+           {loading ? (
             <div>Loading...</div>
           ) : (
             <ul className="square">
@@ -40,9 +40,9 @@ const Home = () => {
                 );
               })}
             </ul>
-          )}
-        </div>
-        <div className="card-footer text-center m-3">
+          )} 
+        </div> */}
+        <div className="card-footer text-center m-5">
           <h2>Ready to Brawl?</h2>
           <Link to="/matchup">
             <button className="btn btn-lg btn-danger">Let's Brawl!</button>
@@ -57,7 +57,7 @@ const Home = () => {
         <div className='hang-image m-5 text-center'>
           <img src={hangimage} width={173}></img>
         </div>
-        <div className="card-body m-2">
+        {/* <div className="card-body m-2">
           {loading ? (
             <div>Loading...</div>
           ) : (
@@ -73,8 +73,8 @@ const Home = () => {
               })}
             </ul>
           )}
-        </div>
-        <div className="card-footer text-center m-3">
+        </div> */}
+        <div className="card-footer text-center m-5">
           <h2>Ready to Hang?</h2>
           <Link to="/matchup">
             <button className="btn btn-lg btn-danger">Let's Hang!</button>
