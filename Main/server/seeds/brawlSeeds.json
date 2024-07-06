@@ -1,0 +1,32 @@
+[
+  {
+    
+    "location": "The Square",
+    "time": "14:00",
+    "weapon": "Chancleta"
+  },
+  {
+    
+    "location": "The Square",
+    "time": "19:00",
+    "weapon": "Spar Sticks"
+  },
+  {
+    
+    "location": "Riverside Dr & 133",
+    "time": "15:00'",
+    "weapon": "Lead Pipe"
+  },
+  {
+    
+    "location": "Public Safety Building",
+    "time": "17:00",
+    "weapon": "Light Sabers"
+  },
+  {
+    
+    "location": "Prentis Cafe",
+    "time": "18:00",
+    "weapon": "Fists"
+  }
+]

@@ -1,0 +1,45 @@
+[
+    {
+        "first": "Johnny",
+        "last": "Walker",
+        "email": "Walkerman@mail.com",
+        "username": "Johnnyman",
+        "password": "thepasswordman"
+    },
+    {
+        "first": "Sonya",
+        "last": "Blade",
+        "email": "Thatsonyagirl@blonde.com",
+        "username": "MissBlade",
+        "password": "123blonde"
+    },
+    {
+        "first": "Mario",
+        "last": "Puentes",
+        "email": "Marioman@knuckles.com",
+        "username": "ItsaMe",
+        "password": "goldstar222"
+    },
+    {
+        "first": "Sai",
+        "last": "Choi",
+        "email": "Sai@mail.com",
+        "username": "Scorpion",
+        "password": "getoverhere"
+    },
+    {
+        "first": "Kitana",
+        "last": "Jones",
+        "email": "justanothergirl@mail.com",
+        "username": "KitKatGirl",
+        "password": "45Kit78"
+    }
+]
+
+
+
+
+
+
+
+
