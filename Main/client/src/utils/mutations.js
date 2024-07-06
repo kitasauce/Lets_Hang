@@ -1,18 +1,39 @@
 import { gql } from '@apollo/client';
 
 export const CREATE_SIGNUP = gql`
- mutation signup($first: String!, $last: String!,$email: String! $username: String!, $password: String!) {
-  createSignup(first: $first, last: $last, username: $username, email: $email password: $password) {
-    token
+mutation Mutation($first: String!, $last: String!, $username: String!, $password: String!) {
+  createSignup(first: $first, last: $last, username: $username, password: $password) {
     user {
       id
       first
       last
       username
-      password
     }
   }
-}`;
+}
+`;
+export const CREATE_HANG = gql`
+mutation CreateBrawl($username: String!, $location: String!, $time: String!, $hobby: String!) {
+  createHang(Username: $username, Location: $location, Time: $time, Hobby: $hobby) {
+    _id
+    username
+    location
+    time
+    hobby
+  }
+}
+`;
+// export const CREATE_BRAWL = gql`
+// mutation CreateBrawl($username: String!, $location: String!, $time: String!, $weapon: String!) {
+//   createBrawl(Username: $username, Location: $location, Time: $time, Weapon: $weapon) {
+//     _id
+//     username
+//     location
+//     time
+//     weapon
+//   }
+// }
+// `;
 
 // import { gql } from '@apollo/client';
 
