@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 // import { useQuery } from '@apollo/client';
 // import { QUERY_HANGS} from '../utils/queries';
+import brawlimage from '../assets/images/brawlimagefist-KV.png';
+import hangimage from '../assets/images/hangimagefist-kv.webp';
 // import Navbar from "../components/Navbar";
 import "../css/homepage.css"
 
@@ -16,12 +18,13 @@ const Home = () => {
   return (
     <>
     <div className="homepage-cards">
-      <div className="card bg-white card-rounded w-50" style={{ height: '500px' }}>
+      <div className="card bg-white card-rounded w-50">
         <div className="card-header bg-dark text-center">
           
         </div>
         <div className='brawl-image m-5 text-center'>
-         </div>
+          <img src={brawlimage} width={149}></img>
+        </div>
         {/* <div className="card-body m-5">
            {loading ? (
             <div>Loading...</div>
@@ -47,12 +50,12 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="card bg-white card-rounded w-50" style={{ height: '500px' }}>
+      <div className="card bg-white card-rounded w-50">
         <div className="card-header bg-dark text-center">
           
         </div>
         <div className='hang-image m-5 text-center'>
-          <img src='https://i.etsystatic.com/27832863/r/il/235ba8/4020975763/il_fullxfull.4020975763_8slx.jpg' height={205} width={173}></img>
+          <img src={hangimage} width={173}></img>
         </div>
         {/* <div className="card-body m-2">
           {loading ? (
