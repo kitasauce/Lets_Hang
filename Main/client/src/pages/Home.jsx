@@ -21,8 +21,7 @@ const Home = () => {
           
         </div>
         <div className='brawl-image m-5 text-center'>
-          <img src='https://ih1.redbubble.net/image.424244235.8518/raf,750x1000,075,t,101010:01c5ca27c6.u2.jpg' height={205} width={149}></img>
-        </div>
+         </div>
         {/* <div className="card-body m-5">
            {loading ? (
             <div>Loading...</div>
