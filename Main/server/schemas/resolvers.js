@@ -1,15 +1,31 @@
-const {User,Hang} = require('../models');
+
+const {User,Hang, Brawl} = require('../models');
 const {signToken, AuthenticationError} = require("../utils/auth")
 
 const resolvers = {
   Query: {
     
     findBrawls: async () => {
-      return Brawl.find('brawl');
+      return Brawl.find({});
     },
     findHangs: async () => {
       return Hang.find({});
     },
+    findLocHobby: async (parent, args) => {
+      let hang = await Hang.find({location: args.location, hobby: args.hobby })
+
+      console.log(hang)
+      
+      return hang
+    },
+    findLocWeapon: async (parent, args) => {
+      let brawl = await Brawl.find({location: args.location, hobby: args.hobby })
+
+      console.log(brawl)
+
+      return brawl
+    }
+
   },
 
 

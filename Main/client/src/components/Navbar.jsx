@@ -10,6 +10,7 @@ const Navbar = () => {
             <NavLink className="navItem" to="/signup" id="signup-link">Sign-up</NavLink>
 
             <NavLink className="navItem" to="/feed" id="feed-link">Activities</NavLink>
+        </header>
     );
 }
 
