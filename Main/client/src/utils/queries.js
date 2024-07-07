@@ -1,35 +1,24 @@
 import { gql } from '@apollo/client';
 
-export const QUERY_USER = gql`
-  query user($username: String!) {
-    user(username: $username) {
-      _id
-      username
-    
-    }
+export const QUERY_BRAWLS = gql`
+query Query($location: String!, $weapon: String!) {
+  findLocWeapon(location: $location, weapon: $weapon) {
+    weapon
+    time
+    location
   }
+}
 `;
 
 export const QUERY_HANGS = gql`
-  query user($username: String!) {
-    user(username: $username) {
-      _id
-      hobby
-      location
-      time
-    }
+  query Query($location: String!, $hobby: String!) {
+  findLocHobby(location: $location, hobby: $hobby) {
+    user_id
+    location
+    time
+    hobby
   }
-`;
-
-export const QUERY_BRAWLS = gql`
-  query user($username: String!) {
-    user(username: $username) {
-      _id
-      weapon
-      location
-      time
-    }
-  }
+}
 `;
 
 

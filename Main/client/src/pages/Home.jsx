@@ -44,7 +44,7 @@ const Home = () => {
         </div> */}
         <div className="card-footer text-center m-5">
           <h2>Ready to Brawl?</h2>
-          <Link to="/matchup">
+          <Link to="/brawl">
             <button className="btn btn-lg btn-danger">Let's Brawl!</button>
           </Link>
         </div>
@@ -55,7 +55,7 @@ const Home = () => {
           
         </div>
         <div className='hang-image m-5 text-center'>
-          <img src={hangimage} width={173}></img>
+          <img src={hangimage} width={172}></img>
         </div>
         {/* <div className="card-body m-2">
           {loading ? (
@@ -76,7 +76,7 @@ const Home = () => {
         </div> */}
         <div className="card-footer text-center m-5">
           <h2>Ready to Hang?</h2>
-          <Link to="/matchup">
+          <Link to="/hang">
             <button className="btn btn-lg btn-danger">Let's Hang!</button>
           </Link>
         </div>

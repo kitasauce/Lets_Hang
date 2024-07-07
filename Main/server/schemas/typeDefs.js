@@ -11,15 +11,13 @@ type User {
   
   type Brawl {
     user_id: ID!
-    username: String!
     location: String!
-    time: Int
+    time: String!
     weapon: String!
   }
   
   type Hang {
     user_id: ID!
-    username: String!
     location: String!
     time: String!
     hobby: String!
@@ -27,6 +25,8 @@ type User {
 type Query {
   findBrawls: [Brawl]
   findHangs: [Hang]
+  findLocHobby(location: String!, hobby: String!): [Hang]
+  findLocWeapon(location: String!, weapon: String!): [Brawl]
 }
  type Auth {
   user: User
