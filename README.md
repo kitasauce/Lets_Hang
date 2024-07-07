@@ -72,20 +72,18 @@ npm run develop
 ```
 
 ## Screenshots
+![signup](./Main/client/src/assets/images/signup-1.jpg)
+![login](./Main/client/src/assets/images/login-1.jpg)
+![brawl](./Main/client/src/assets/images/brawlsrc-3.jpg)
+![brawl](./Main/client/src/assets/images/brawlsrc-4.jpg)
+![hang](./Main/client/src/assets/images/hangsrc5.jpg)
+![hang](./Main/client/src/assets/images/hangsrc6.jpg)
+![feed](./Main/client/src/assets/images/feed7.jpg)
+![mongo](./Main/client/src/assets/images/mongodb-8.jpg)
+![graphql](./Main/client/src/assets/images/graphql-9.jpg)
+![DB](./Main/client/src/assets/images/userDB-10.jpg)
 
-<img src=./main/client/src/assets/images/signup-1.jpg>
-<p>
-<img src=./main/client/src/assets/images/login-2.jpg>
-<p><img src=./main/client/src/assets/images/brawlsrc-3.jpg>
-<p><img src=./main/client/src/assets/images/brawlsrc-4.jpg>
-<p><img src=./main/client/src/assets/images/hangsrc5.jpg>
-<p><img src=./main/client/src/assets/images/hangsrc6.jpg>
-<p><img src=./main/client/src/assets/images/feed7.jpg>
-<p><img src=./main/client/src/assets/images/mongodb-8.jpg>
-<p><img src=./main/client/src/assets/images/graphql-9.jpg>
-<p>
-<img src=./main/client/src/assets/images/userDB-10.jpg>
-<p> (Yay, Authentication and Storage works! )
+(Yay, Authentication and Storage works! )
 
 ``` 
 
