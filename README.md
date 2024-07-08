@@ -6,7 +6,7 @@ An Interactive Application with purpose to connect people in small areas for hob
 
   Repository: https://github.com/kitasauce/Lets_Hang
 
-  Render Active Website: https://lets-hang-1.onrender.com
+  Render Active Website: https://lets-hang-e9ek.onrender.com/signup
 
   ## User Story
   <b>AS a</b> new member of the community, <br>
