@@ -6,7 +6,12 @@ An Interactive Application with purpose to connect people in small areas for hob
 
   Repository: https://github.com/kitasauce/Lets_Hang
 
-  Render Active Website: 
+  Render Active Website: https://lets-hang-1.onrender.com
+
+  ## User Story
+  <b>AS a</b> new member of the community, <br>
+  <b>I WANT</b> an application that makes it simple for me to meet new people nearby,<br>
+  <b>So THAT</b> when I input my preferred hang-out location and hobbies, I am match with people with similar interests.
 
 
 
